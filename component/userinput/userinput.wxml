@@ -1,0 +1,6 @@
+<view class="userinput">
+    <view>组件-{{name}}</view>
+    用户名：
+    <input class="enter" bindblur="onChange"></input>
+    <view>{{userInput}}</view>
+  </view>

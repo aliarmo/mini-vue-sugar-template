@@ -1,0 +1,8 @@
+<view class="userinfo">
+    <view class="header">组件-{{name}}</view>
+    <view wx:if="{{userinfo}}">
+      <view>{{userinfo.username}}</view>
+      <view>{{userinfo.password}}</view>
+    </view>
+    <UserInput></UserInput>
+  </view>

@@ -1,0 +1,10 @@
+<view class="container">
+    <view>首页-{{currTime}}</view>
+    <button bindtap="formate">formate time</button>
+    <UserInfo   style="display:{{isShowUser?'block':'none'}};"      userinfo="{{userinfo}}"    ></UserInfo>
+    <button class="btn" bindtap="onClick">click to toggle</button>
+    <view class="list">
+      <view wx:for="{{list}}" wx:for-item="item" wx:for-index="index" wx:key="{{index}}"    >{{item.name}}:{{index}}</view>
+    </view>
+    <navigator url="/pages/native/native" open-type="switchTab" class="switch">切换到native页面</navigator>
+  </view>
